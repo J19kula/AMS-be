@@ -1,0 +1,20 @@
+package com.example.AMS.exceptions;
+
+import javax.persistence.criteria.CriteriaBuilder;
+
+public class InsufficientFundsException extends Exception{
+
+    public InsufficientFundsException(){}
+
+    public InsufficientFundsException(String message){
+        super(message);
+    }
+
+    public InsufficientFundsException(String message, Throwable cause){
+        super(message, cause);
+    }
+
+    public InsufficientFundsException(Throwable cause){
+        super(cause);
+    }
+}
